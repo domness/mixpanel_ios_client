@@ -10,7 +10,7 @@
 
 @protocol MixpanelDelegate <NSObject>
 
-- (void)requestSucceeded;
+- (void)requestSucceededForMethod:(NSString *)method;
 - (void)requestFailedWithError:(NSError *)error;
 
 @optional

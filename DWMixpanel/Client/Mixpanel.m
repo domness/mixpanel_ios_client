@@ -22,7 +22,8 @@
 
 #define BASE_URL @"http://mixpanel.com/api/2.0/"
 
-#pragma mark - Initialisations
+#pragma mark -
+#pragma mark Initialisations
 
 + (Mixpanel *)initFromDefaultsWithDelegate:(NSObject *)theDelegate
 {
@@ -33,11 +34,13 @@
 {
     if ((self = [super init])) {
         _delegate =  newDelegate;
+        _expireInterval = (NSInteger *)60;
     }
     return self;
 }
 
-#pragma mark - Setting authentication details
+#pragma mark -
+#pragma mark Setting authentication details
 
 - (void)setApiKey:(NSString *)key andSecret:(NSString *)secret
 {
@@ -45,18 +48,48 @@
     _apiSecret = secret;
 }
 
-#pragma mark - API Calls
+#pragma mark -
+#pragma mark Events
 
 - (void)events:(NSDictionary *)params
 {
     [self makeRequestWithParams:params forPath:@"events/"];
 }
 
-- (void)topEvents:(NSDictionary *)params
+- (void)eventsTop:(NSDictionary *)params
 {
     [self makeRequestWithParams:params forPath:@"events/top/"];
 }
 
+- (void)eventsNames:(NSDictionary *)params
+{
+    [self makeRequestWithParams:params forPath:@"events/names/"];
+}
+
+- (void)eventsProperties:(NSDictionary *)params
+{
+    [self makeRequestWithParams:params forPath:@"events/properties/"];
+}
+
+- (void)eventsPropertiesTop:(NSDictionary *)params
+{
+    [self makeRequestWithParams:params forPath:@"events/properties/top/"];
+}
+
+- (void)eventsPropertiesValues:(NSDictionary *)params
+{
+    [self makeRequestWithParams:params forPath:@"events/properties/values/"];
+}
+
+#pragma mark -
+#pragma mark - Funnels
+
+- (void)funnels:(NSDictionary *)params
+{
+    [self makeRequestWithParams:params forPath:@"funnels/"];
+}
+
+#pragma mark -
 #pragma mark - Private methods
 
 - (void)makeRequestWithParams:(NSDictionary *)params forPath:(NSString *)path
@@ -68,21 +101,17 @@
     NSMutableURLRequest *request = [httpClient requestWithMethod:@"GET"
                                                             path:path
                                                       parameters:mutParams];
-    
-    NSLog(@"URL: %@", [[request URL] absoluteString]);
-    
     AFHTTPRequestOperation *operation = [[AFHTTPRequestOperation alloc] initWithRequest:request];
     [httpClient registerHTTPOperationClass:[AFHTTPRequestOperation class]];
     [operation setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSString *response = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
-        if ([self _isValidDelegateForSelector:@selector(requestSucceeded)]) {
-            [_delegate requestSucceeded];
+        if ([self _isValidDelegateForSelector:@selector(requestSucceededForMethod:)]) {
+            [_delegate requestSucceededForMethod:path];
         }
         if ([self _isValidDelegateForSelector:@selector(receivedData:)]) {
             [_delegate receivedData:[self dictionaryFromJson:response]];
         }
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-        NSLog(@"Error: %@", error);
         if ([self _isValidDelegateForSelector:@selector(requestFailedWithError:)]) {
             [_delegate requestFailedWithError:error];
         }
@@ -103,7 +132,7 @@
 
 - (NSInteger)expire
 {
-    NSDate *date = [[NSDate date] dateByAddingTimeInterval:60];
+    NSDate *date = [[NSDate date] dateByAddingTimeInterval:(int)_expireInterval];
     return (NSInteger)[date timeIntervalSince1970];
 }
 

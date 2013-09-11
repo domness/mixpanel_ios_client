@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04C6EF1A17E0D0AB00D80381 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04C6EF1917E0D0AB00D80381 /* ViewController.xib */; };
 		81067CB4A47D4346B96E2418 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A71680BC61204D69B427E47A /* libPods.a */; };
 		E7BCEB1117E0C38C00FE73D5 /* SBJsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E7BCEAFE17E0C38C00FE73D5 /* SBJsonParser.m */; };
 		E7BCEB1217E0C38C00FE73D5 /* SBJsonStreamParser.m in Sources */ = {isa = PBXBuildFile; fileRef = E7BCEB0017E0C38C00FE73D5 /* SBJsonStreamParser.m */; };
@@ -33,7 +34,6 @@
 		E7DD650517E0AAD300E26190 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7DD64E417E0AAD300E26190 /* UIKit.framework */; };
 		E7DD650D17E0AAD300E26190 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E7DD650B17E0AAD300E26190 /* InfoPlist.strings */; };
 		E7DD650F17E0AAD300E26190 /* DWMixpanelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DD650E17E0AAD300E26190 /* DWMixpanelTests.m */; };
-		E7DD651C17E0AD4B00E26190 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7DD651B17E0AD4B00E26190 /* ViewController.xib */; };
 		E7DD651E17E0AE0A00E26190 /* MainWindow~iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7DD651D17E0AE0A00E26190 /* MainWindow~iPad.xib */; };
 		E7DD652017E0AE2B00E26190 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7DD651F17E0AE2B00E26190 /* MainWindow.xib */; };
 		E7DD652617E0B0D100E26190 /* Mixpanel.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DD652517E0B0D100E26190 /* Mixpanel.m */; };
@@ -51,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04C6EF1917E0D0AB00D80381 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		7D0E63484B6B43E2B2D51314 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		A71680BC61204D69B427E47A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7BCEAFC17E0C38C00FE73D5 /* SBJson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJson.h; sourceTree = "<group>"; };
@@ -95,7 +96,6 @@
 		E7DD650A17E0AAD300E26190 /* DWMixpanelTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DWMixpanelTests-Info.plist"; sourceTree = "<group>"; };
 		E7DD650C17E0AAD300E26190 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E7DD650E17E0AAD300E26190 /* DWMixpanelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWMixpanelTests.m; sourceTree = "<group>"; };
-		E7DD651B17E0AD4B00E26190 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		E7DD651D17E0AE0A00E26190 /* MainWindow~iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MainWindow~iPad.xib"; sourceTree = "<group>"; };
 		E7DD651F17E0AE2B00E26190 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		E7DD652317E0B0C100E26190 /* MixpanelDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixpanelDelegate.h; sourceTree = "<group>"; };
@@ -202,7 +202,7 @@
 				E7DD64F017E0AAD300E26190 /* AppDelegate.m */,
 				E7DD64F817E0AAD300E26190 /* ViewController.h */,
 				E7DD64F917E0AAD300E26190 /* ViewController.m */,
-				E7DD651B17E0AD4B00E26190 /* ViewController.xib */,
+				04C6EF1917E0D0AB00D80381 /* ViewController.xib */,
 				E7DD64FB17E0AAD300E26190 /* Images.xcassets */,
 				E7DD64E717E0AAD300E26190 /* Supporting Files */,
 				E7DD651D17E0AE0A00E26190 /* MainWindow~iPad.xib */,
@@ -328,10 +328,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04C6EF1A17E0D0AB00D80381 /* ViewController.xib in Resources */,
 				E7DD64FC17E0AAD300E26190 /* Images.xcassets in Resources */,
 				E7DD652017E0AE2B00E26190 /* MainWindow.xib in Resources */,
 				E7DD651E17E0AE0A00E26190 /* MainWindow~iPad.xib in Resources */,
-				E7DD651C17E0AD4B00E26190 /* ViewController.xib in Resources */,
 				E7DD64EB17E0AAD300E26190 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -32,7 +32,7 @@
                 <autoresizingMask key="autoresizingMask"/>
             </navigationBar>
             <viewControllers>
-                <viewController nibName="ViewController" id="Pei-d9-qyQ">
+                <viewController nibName="ViewController" id="Pei-d9-qyQ" customClass="ViewController">
                     <navigationItem key="navigationItem" id="dAj-mo-Ptn"/>
                     <nil key="simulatedStatusBarMetrics"/>
                     <nil key="simulatedTopBarMetrics"/>
