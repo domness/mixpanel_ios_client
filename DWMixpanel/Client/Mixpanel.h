@@ -28,6 +28,11 @@
 
 - (void)setApiKey:(NSString *)key andSecret:(NSString *)secret;
 
+/*
+ All details on the API methods below can be found from the Mixpanel API documentation here:
+ https://mixpanel.com/docs/api-documentation/data-export-api
+ */
+
 #pragma mark -
 #pragma mark Events
 
@@ -179,5 +184,28 @@
  'where'        NSString
  */
 - (void)segmentationAverage:(NSDictionary *)params;
+
+#pragma mark -
+#pragma mark Retention
+
+/*
+ METHOD: retention
+ URI: http://mixpanel.com/api/2.0/retention/
+ Parameters:
+ 'from_date'        NSString
+ 'to_date'          NSString
+ 'retention_type'   NSString
+ 'born_event'       NSString
+ 'event'            NSString
+ 'born_where'       NSString
+ 'where'            NSString
+ 'interval'         NSInteger
+ 'interval_count'   NSInteger
+ 'unit'             NSString
+ 'on'               NSString
+ 'limit'            NSInteger
+ */
+- (void)retention:(NSDictionary *)params;
+
 
 @end

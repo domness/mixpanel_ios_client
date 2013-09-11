@@ -118,6 +118,14 @@
 }
 
 #pragma mark -
+#pragma mark Retention
+
+- (void)retention:(NSDictionary *)params
+{
+    [self makeRequestWithParams:params forPath:@"retention/"];
+}
+
+#pragma mark -
 #pragma mark Private methods
 
 - (void)makeRequestForPath:(NSString *)path
