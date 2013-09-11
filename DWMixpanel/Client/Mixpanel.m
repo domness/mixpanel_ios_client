@@ -126,6 +126,14 @@
 }
 
 #pragma mark -
+#pragma mark Engage
+
+- (void)engage:(NSDictionary *)params
+{
+    [self makeRequestWithParams:params forPath:@"engage/"];
+}
+
+#pragma mark -
 #pragma mark Private methods
 
 - (void)makeRequestForPath:(NSString *)path

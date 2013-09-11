@@ -74,6 +74,8 @@
 //    [mixpanel retention:@{@"from_date": @"2013-07-22",
 //                          @"to_date": @"2013-09-11",
 //                          @"born_event": @"User created"}];
+    
+//    [mixpanel engage:nil];
 }
 
 - (void)didReceiveMemoryWarning

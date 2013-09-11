@@ -207,5 +207,17 @@
  */
 - (void)retention:(NSDictionary *)params;
 
+#pragma mark -
+#pragma mark Engage
+
+/*
+ METHOD: engage
+ URI: http://mixpanel.com/api/2.0/engage/
+ Parameters:
+ 'where'        NSString
+ 'session_id'   NSString
+ 'page'         NSInteger
+ */
+- (void)engage:(NSDictionary *)params;
 
 @end
