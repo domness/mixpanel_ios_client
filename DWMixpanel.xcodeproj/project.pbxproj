@@ -13,8 +13,6 @@
 		E7DD64EB17E0AAD300E26190 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E7DD64E917E0AAD300E26190 /* InfoPlist.strings */; };
 		E7DD64ED17E0AAD300E26190 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DD64EC17E0AAD300E26190 /* main.m */; };
 		E7DD64F117E0AAD300E26190 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DD64F017E0AAD300E26190 /* AppDelegate.m */; };
-		E7DD64F417E0AAD300E26190 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7DD64F217E0AAD300E26190 /* Main_iPhone.storyboard */; };
-		E7DD64F717E0AAD300E26190 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7DD64F517E0AAD300E26190 /* Main_iPad.storyboard */; };
 		E7DD64FA17E0AAD300E26190 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DD64F917E0AAD300E26190 /* ViewController.m */; };
 		E7DD64FC17E0AAD300E26190 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7DD64FB17E0AAD300E26190 /* Images.xcassets */; };
 		E7DD650317E0AAD300E26190 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7DD650217E0AAD300E26190 /* XCTest.framework */; };
@@ -22,6 +20,9 @@
 		E7DD650517E0AAD300E26190 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7DD64E417E0AAD300E26190 /* UIKit.framework */; };
 		E7DD650D17E0AAD300E26190 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E7DD650B17E0AAD300E26190 /* InfoPlist.strings */; };
 		E7DD650F17E0AAD300E26190 /* DWMixpanelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DD650E17E0AAD300E26190 /* DWMixpanelTests.m */; };
+		E7DD651C17E0AD4B00E26190 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7DD651B17E0AD4B00E26190 /* ViewController.xib */; };
+		E7DD651E17E0AE0A00E26190 /* MainWindow~iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7DD651D17E0AE0A00E26190 /* MainWindow~iPad.xib */; };
+		E7DD652017E0AE2B00E26190 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7DD651F17E0AE2B00E26190 /* MainWindow.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,8 +46,6 @@
 		E7DD64EE17E0AAD300E26190 /* DWMixpanel-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DWMixpanel-Prefix.pch"; sourceTree = "<group>"; };
 		E7DD64EF17E0AAD300E26190 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E7DD64F017E0AAD300E26190 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E7DD64F317E0AAD300E26190 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		E7DD64F617E0AAD300E26190 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		E7DD64F817E0AAD300E26190 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		E7DD64F917E0AAD300E26190 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		E7DD64FB17E0AAD300E26190 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -55,6 +54,9 @@
 		E7DD650A17E0AAD300E26190 /* DWMixpanelTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DWMixpanelTests-Info.plist"; sourceTree = "<group>"; };
 		E7DD650C17E0AAD300E26190 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		E7DD650E17E0AAD300E26190 /* DWMixpanelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWMixpanelTests.m; sourceTree = "<group>"; };
+		E7DD651B17E0AD4B00E26190 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		E7DD651D17E0AE0A00E26190 /* MainWindow~iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MainWindow~iPad.xib"; sourceTree = "<group>"; };
+		E7DD651F17E0AE2B00E26190 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,12 +118,13 @@
 			children = (
 				E7DD64EF17E0AAD300E26190 /* AppDelegate.h */,
 				E7DD64F017E0AAD300E26190 /* AppDelegate.m */,
-				E7DD64F217E0AAD300E26190 /* Main_iPhone.storyboard */,
-				E7DD64F517E0AAD300E26190 /* Main_iPad.storyboard */,
 				E7DD64F817E0AAD300E26190 /* ViewController.h */,
 				E7DD64F917E0AAD300E26190 /* ViewController.m */,
+				E7DD651B17E0AD4B00E26190 /* ViewController.xib */,
 				E7DD64FB17E0AAD300E26190 /* Images.xcassets */,
 				E7DD64E717E0AAD300E26190 /* Supporting Files */,
+				E7DD651D17E0AE0A00E26190 /* MainWindow~iPad.xib */,
+				E7DD651F17E0AE2B00E26190 /* MainWindow.xib */,
 			);
 			path = DWMixpanel;
 			sourceTree = "<group>";
@@ -231,9 +234,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7DD64F717E0AAD300E26190 /* Main_iPad.storyboard in Resources */,
 				E7DD64FC17E0AAD300E26190 /* Images.xcassets in Resources */,
-				E7DD64F417E0AAD300E26190 /* Main_iPhone.storyboard in Resources */,
+				E7DD652017E0AE2B00E26190 /* MainWindow.xib in Resources */,
+				E7DD651E17E0AE0A00E26190 /* MainWindow~iPad.xib in Resources */,
+				E7DD651C17E0AD4B00E26190 /* ViewController.xib in Resources */,
 				E7DD64EB17E0AAD300E26190 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,22 +288,6 @@
 				E7DD64EA17E0AAD300E26190 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		E7DD64F217E0AAD300E26190 /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E7DD64F317E0AAD300E26190 /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		E7DD64F517E0AAD300E26190 /* Main_iPad.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E7DD64F617E0AAD300E26190 /* Base */,
-			);
-			name = Main_iPad.storyboard;
 			sourceTree = "<group>";
 		};
 		E7DD650B17E0AAD300E26190 /* InfoPlist.strings */ = {
@@ -474,6 +462,7 @@
 				E7DD651417E0AAD300E26190 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E7DD651517E0AAD300E26190 /* Build configuration list for PBXNativeTarget "DWMixpanelTests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +471,7 @@
 				E7DD651717E0AAD300E26190 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
