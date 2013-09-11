@@ -1,0 +1,489 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E7DD64E117E0AAD300E26190 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7DD64E017E0AAD300E26190 /* Foundation.framework */; };
+		E7DD64E317E0AAD300E26190 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7DD64E217E0AAD300E26190 /* CoreGraphics.framework */; };
+		E7DD64E517E0AAD300E26190 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7DD64E417E0AAD300E26190 /* UIKit.framework */; };
+		E7DD64EB17E0AAD300E26190 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E7DD64E917E0AAD300E26190 /* InfoPlist.strings */; };
+		E7DD64ED17E0AAD300E26190 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DD64EC17E0AAD300E26190 /* main.m */; };
+		E7DD64F117E0AAD300E26190 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DD64F017E0AAD300E26190 /* AppDelegate.m */; };
+		E7DD64F417E0AAD300E26190 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7DD64F217E0AAD300E26190 /* Main_iPhone.storyboard */; };
+		E7DD64F717E0AAD300E26190 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7DD64F517E0AAD300E26190 /* Main_iPad.storyboard */; };
+		E7DD64FA17E0AAD300E26190 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DD64F917E0AAD300E26190 /* ViewController.m */; };
+		E7DD64FC17E0AAD300E26190 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7DD64FB17E0AAD300E26190 /* Images.xcassets */; };
+		E7DD650317E0AAD300E26190 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7DD650217E0AAD300E26190 /* XCTest.framework */; };
+		E7DD650417E0AAD300E26190 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7DD64E017E0AAD300E26190 /* Foundation.framework */; };
+		E7DD650517E0AAD300E26190 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7DD64E417E0AAD300E26190 /* UIKit.framework */; };
+		E7DD650D17E0AAD300E26190 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E7DD650B17E0AAD300E26190 /* InfoPlist.strings */; };
+		E7DD650F17E0AAD300E26190 /* DWMixpanelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DD650E17E0AAD300E26190 /* DWMixpanelTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E7DD650617E0AAD300E26190 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E7DD64D517E0AAD300E26190 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7DD64DC17E0AAD300E26190;
+			remoteInfo = DWMixpanel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E7DD64DD17E0AAD300E26190 /* DWMixpanel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DWMixpanel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7DD64E017E0AAD300E26190 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E7DD64E217E0AAD300E26190 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		E7DD64E417E0AAD300E26190 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E7DD64E817E0AAD300E26190 /* DWMixpanel-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DWMixpanel-Info.plist"; sourceTree = "<group>"; };
+		E7DD64EA17E0AAD300E26190 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E7DD64EC17E0AAD300E26190 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E7DD64EE17E0AAD300E26190 /* DWMixpanel-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DWMixpanel-Prefix.pch"; sourceTree = "<group>"; };
+		E7DD64EF17E0AAD300E26190 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E7DD64F017E0AAD300E26190 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E7DD64F317E0AAD300E26190 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		E7DD64F617E0AAD300E26190 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		E7DD64F817E0AAD300E26190 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E7DD64F917E0AAD300E26190 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E7DD64FB17E0AAD300E26190 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E7DD650117E0AAD300E26190 /* DWMixpanelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DWMixpanelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7DD650217E0AAD300E26190 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E7DD650A17E0AAD300E26190 /* DWMixpanelTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DWMixpanelTests-Info.plist"; sourceTree = "<group>"; };
+		E7DD650C17E0AAD300E26190 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E7DD650E17E0AAD300E26190 /* DWMixpanelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWMixpanelTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E7DD64DA17E0AAD300E26190 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7DD64E317E0AAD300E26190 /* CoreGraphics.framework in Frameworks */,
+				E7DD64E517E0AAD300E26190 /* UIKit.framework in Frameworks */,
+				E7DD64E117E0AAD300E26190 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7DD64FE17E0AAD300E26190 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7DD650317E0AAD300E26190 /* XCTest.framework in Frameworks */,
+				E7DD650517E0AAD300E26190 /* UIKit.framework in Frameworks */,
+				E7DD650417E0AAD300E26190 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E7DD64D417E0AAD300E26190 = {
+			isa = PBXGroup;
+			children = (
+				E7DD64E617E0AAD300E26190 /* DWMixpanel */,
+				E7DD650817E0AAD300E26190 /* DWMixpanelTests */,
+				E7DD64DF17E0AAD300E26190 /* Frameworks */,
+				E7DD64DE17E0AAD300E26190 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E7DD64DE17E0AAD300E26190 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E7DD64DD17E0AAD300E26190 /* DWMixpanel.app */,
+				E7DD650117E0AAD300E26190 /* DWMixpanelTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E7DD64DF17E0AAD300E26190 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E7DD64E017E0AAD300E26190 /* Foundation.framework */,
+				E7DD64E217E0AAD300E26190 /* CoreGraphics.framework */,
+				E7DD64E417E0AAD300E26190 /* UIKit.framework */,
+				E7DD650217E0AAD300E26190 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E7DD64E617E0AAD300E26190 /* DWMixpanel */ = {
+			isa = PBXGroup;
+			children = (
+				E7DD64EF17E0AAD300E26190 /* AppDelegate.h */,
+				E7DD64F017E0AAD300E26190 /* AppDelegate.m */,
+				E7DD64F217E0AAD300E26190 /* Main_iPhone.storyboard */,
+				E7DD64F517E0AAD300E26190 /* Main_iPad.storyboard */,
+				E7DD64F817E0AAD300E26190 /* ViewController.h */,
+				E7DD64F917E0AAD300E26190 /* ViewController.m */,
+				E7DD64FB17E0AAD300E26190 /* Images.xcassets */,
+				E7DD64E717E0AAD300E26190 /* Supporting Files */,
+			);
+			path = DWMixpanel;
+			sourceTree = "<group>";
+		};
+		E7DD64E717E0AAD300E26190 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E7DD64E817E0AAD300E26190 /* DWMixpanel-Info.plist */,
+				E7DD64E917E0AAD300E26190 /* InfoPlist.strings */,
+				E7DD64EC17E0AAD300E26190 /* main.m */,
+				E7DD64EE17E0AAD300E26190 /* DWMixpanel-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E7DD650817E0AAD300E26190 /* DWMixpanelTests */ = {
+			isa = PBXGroup;
+			children = (
+				E7DD650E17E0AAD300E26190 /* DWMixpanelTests.m */,
+				E7DD650917E0AAD300E26190 /* Supporting Files */,
+			);
+			path = DWMixpanelTests;
+			sourceTree = "<group>";
+		};
+		E7DD650917E0AAD300E26190 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E7DD650A17E0AAD300E26190 /* DWMixpanelTests-Info.plist */,
+				E7DD650B17E0AAD300E26190 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E7DD64DC17E0AAD300E26190 /* DWMixpanel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7DD651217E0AAD300E26190 /* Build configuration list for PBXNativeTarget "DWMixpanel" */;
+			buildPhases = (
+				E7DD64D917E0AAD300E26190 /* Sources */,
+				E7DD64DA17E0AAD300E26190 /* Frameworks */,
+				E7DD64DB17E0AAD300E26190 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DWMixpanel;
+			productName = DWMixpanel;
+			productReference = E7DD64DD17E0AAD300E26190 /* DWMixpanel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E7DD650017E0AAD300E26190 /* DWMixpanelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7DD651517E0AAD300E26190 /* Build configuration list for PBXNativeTarget "DWMixpanelTests" */;
+			buildPhases = (
+				E7DD64FD17E0AAD300E26190 /* Sources */,
+				E7DD64FE17E0AAD300E26190 /* Frameworks */,
+				E7DD64FF17E0AAD300E26190 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E7DD650717E0AAD300E26190 /* PBXTargetDependency */,
+			);
+			name = DWMixpanelTests;
+			productName = DWMixpanelTests;
+			productReference = E7DD650117E0AAD300E26190 /* DWMixpanelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E7DD64D517E0AAD300E26190 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Dominic Wroblewski";
+				TargetAttributes = {
+					E7DD650017E0AAD300E26190 = {
+						TestTargetID = E7DD64DC17E0AAD300E26190;
+					};
+				};
+			};
+			buildConfigurationList = E7DD64D817E0AAD300E26190 /* Build configuration list for PBXProject "DWMixpanel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E7DD64D417E0AAD300E26190;
+			productRefGroup = E7DD64DE17E0AAD300E26190 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E7DD64DC17E0AAD300E26190 /* DWMixpanel */,
+				E7DD650017E0AAD300E26190 /* DWMixpanelTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E7DD64DB17E0AAD300E26190 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7DD64F717E0AAD300E26190 /* Main_iPad.storyboard in Resources */,
+				E7DD64FC17E0AAD300E26190 /* Images.xcassets in Resources */,
+				E7DD64F417E0AAD300E26190 /* Main_iPhone.storyboard in Resources */,
+				E7DD64EB17E0AAD300E26190 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7DD64FF17E0AAD300E26190 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7DD650D17E0AAD300E26190 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E7DD64D917E0AAD300E26190 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7DD64FA17E0AAD300E26190 /* ViewController.m in Sources */,
+				E7DD64F117E0AAD300E26190 /* AppDelegate.m in Sources */,
+				E7DD64ED17E0AAD300E26190 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E7DD64FD17E0AAD300E26190 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E7DD650F17E0AAD300E26190 /* DWMixpanelTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E7DD650717E0AAD300E26190 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E7DD64DC17E0AAD300E26190 /* DWMixpanel */;
+			targetProxy = E7DD650617E0AAD300E26190 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E7DD64E917E0AAD300E26190 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E7DD64EA17E0AAD300E26190 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		E7DD64F217E0AAD300E26190 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E7DD64F317E0AAD300E26190 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		E7DD64F517E0AAD300E26190 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E7DD64F617E0AAD300E26190 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		E7DD650B17E0AAD300E26190 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E7DD650C17E0AAD300E26190 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E7DD651017E0AAD300E26190 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E7DD651117E0AAD300E26190 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E7DD651317E0AAD300E26190 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DWMixpanel/DWMixpanel-Prefix.pch";
+				INFOPLIST_FILE = "DWMixpanel/DWMixpanel-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		E7DD651417E0AAD300E26190 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DWMixpanel/DWMixpanel-Prefix.pch";
+				INFOPLIST_FILE = "DWMixpanel/DWMixpanel-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		E7DD651617E0AAD300E26190 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DWMixpanel.app/DWMixpanel";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DWMixpanel/DWMixpanel-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DWMixpanelTests/DWMixpanelTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		E7DD651717E0AAD300E26190 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DWMixpanel.app/DWMixpanel";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DWMixpanel/DWMixpanel-Prefix.pch";
+				INFOPLIST_FILE = "DWMixpanelTests/DWMixpanelTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E7DD64D817E0AAD300E26190 /* Build configuration list for PBXProject "DWMixpanel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7DD651017E0AAD300E26190 /* Debug */,
+				E7DD651117E0AAD300E26190 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E7DD651217E0AAD300E26190 /* Build configuration list for PBXNativeTarget "DWMixpanel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7DD651317E0AAD300E26190 /* Debug */,
+				E7DD651417E0AAD300E26190 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E7DD651517E0AAD300E26190 /* Build configuration list for PBXNativeTarget "DWMixpanelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7DD651617E0AAD300E26190 /* Debug */,
+				E7DD651717E0AAD300E26190 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E7DD64D517E0AAD300E26190 /* Project object */;
+}
