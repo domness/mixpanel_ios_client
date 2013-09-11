@@ -115,4 +115,69 @@
  */
 - (void)funnels:(NSDictionary *)params;
 
+/*
+ METHOD: funnels/list
+ URI: http://mixpanel.com/api/2.0/funnels/list/
+ */
+- (void)funnelsList;
+
+#pragma mark -
+#pragma mark Segmentation
+
+/*
+ METHOD: segmentation
+ URI: http://mixpanel.com/api/2.0/segmentation/
+ Parameters:
+ 'event'        NSString
+ 'from_date'    NSString
+ 'to_date'      NSString
+ 'on'           NSString
+ 'unit'         NSString
+ 'where'        NSString
+ 'limit'        NSInteger
+ 'type'         NSString
+ */
+- (void)segmentation:(NSDictionary *)params;
+
+/*
+ METHOD: segmentation/numeric
+ URI: http://mixpanel.com/api/2.0/segmentation/numeric/
+ Parameters:
+ 'event'        NSString
+ 'from_date'    NSString
+ 'to_date'      NSString
+ 'on'           NSString
+ 'buckets'      NSInteger
+ 'unit'         NSString
+ 'where'        NSString
+ 'type'         NSString
+ */
+- (void)segmentationNumeric:(NSDictionary *)params;
+
+/*
+ METHOD: segmentation/sum
+ URI: http://mixpanel.com/api/2.0/segmentation/sum/
+ Parameters:
+ 'event'        NSString
+ 'from_date'    NSString
+ 'to_date'      NSString
+ 'on'           NSString
+ 'unit'         NSString
+ 'where'        NSString
+ */
+- (void)segmentationSum:(NSDictionary *)params;
+
+/*
+ METHOD: segmentation/average
+ URI: http://mixpanel.com/api/2.0/segmentation/average/
+ Parameters:
+ 'event'        NSString
+ 'from_date'    NSString
+ 'to_date'      NSString
+ 'on'           NSString
+ 'unit'         NSString
+ 'where'        NSString
+ */
+- (void)segmentationAverage:(NSDictionary *)params;
+
 @end

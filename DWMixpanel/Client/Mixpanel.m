@@ -82,15 +82,48 @@
 }
 
 #pragma mark -
-#pragma mark - Funnels
+#pragma mark Funnels
 
 - (void)funnels:(NSDictionary *)params
 {
     [self makeRequestWithParams:params forPath:@"funnels/"];
 }
 
+- (void)funnelsList
+{
+    [self makeRequestForPath:@"funnels/list/"];
+}
+
 #pragma mark -
-#pragma mark - Private methods
+#pragma mark Segmentation
+
+- (void)segmentation:(NSDictionary *)params
+{
+    [self makeRequestWithParams:params forPath:@"segmentation/"];
+}
+
+- (void)segmentationNumeric:(NSDictionary *)params
+{
+    [self makeRequestWithParams:params forPath:@"segmentation/numeric/"];
+}
+
+- (void)segmentationSum:(NSDictionary *)params
+{
+    [self makeRequestWithParams:params forPath:@"segmentation/sum/"];
+}
+
+- (void)segmentationAverage:(NSDictionary *)params
+{
+    [self makeRequestWithParams:params forPath:@"segmentation/average/"];
+}
+
+#pragma mark -
+#pragma mark Private methods
+
+- (void)makeRequestForPath:(NSString *)path
+{
+    [self makeRequestWithParams:nil forPath:path];
+}
 
 - (void)makeRequestWithParams:(NSDictionary *)params forPath:(NSString *)path
 {

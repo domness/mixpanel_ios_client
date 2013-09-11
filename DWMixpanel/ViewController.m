@@ -43,13 +43,42 @@
     
 //    [mixpanel eventsPropertiesTop:@{@"event": @"User created"}];
     
-    [mixpanel funnels:@{@"funnel_id": [NSNumber numberWithInt:424930]}];
+//    [mixpanel funnels:@{@"funnel_id": [NSNumber numberWithInt:424930]}];
+    
+//    [mixpanel funnelsList];
+    
+//    [mixpanel segmentation:@{@"event": @"Landed on Homepage",
+//                             @"from_date": @"2013-07-22",
+//                             @"to_date": @"2013-09-11"
+//                             }];
+    
+//    [mixpanel segmentationNumeric:@{@"event": @"Landed on Homepage",
+//                                    @"from_date": @"2013-07-22",
+//                                    @"to_date": @"2013-09-11",
+//                                    @"on": @"number(properties[\"time\"])",
+//                                    @"buckets": [NSNumber numberWithInt:5]
+//                                    }];
+    
+//    [mixpanel segmentationSum:@{@"event": @"Landed on Homepage",
+//                                @"from_date": @"2013-07-22",
+//                                @"to_date": @"2013-09-11",
+//                                @"on": @"number(properties[\"time\"])"
+//                                }];
+    
+//    [mixpanel segmentationAverage:@{@"event": @"Landed on Homepage",
+//                                @"from_date": @"2013-07-22",
+//                                @"to_date": @"2013-09-11",
+//                                @"on": @"number(properties[\"time\"])"
+//                                }];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
 }
+
+#pragma mark -
+#pragma mark Mixpanel Delegate Methods
 
 - (void)requestSucceededForMethod:(NSString *)method
 {
