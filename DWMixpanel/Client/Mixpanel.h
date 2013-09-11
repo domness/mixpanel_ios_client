@@ -49,7 +49,7 @@
 - (void)events:(NSDictionary *)params;
 
 /*
- METHOD: top
+ METHOD: events/top
  URI: http://mixpanel.com/api/2.0/events/top/
  Parameters:
  'type'         NSString
@@ -58,7 +58,7 @@
 - (void)eventsTop:(NSDictionary *)params;
 
 /*
- METHOD: names
+ METHOD: events/names
  URI: http://mixpanel.com/api/2.0/events/names/
  Parameters:
  'type'         NSString
@@ -67,7 +67,7 @@
 - (void)eventsNames:(NSDictionary *)params;
 
 /*
- METHOD: properties
+ METHOD: events/properties
  URI: http://mixpanel.com/api/2.0/events/properties/
  Parameters:
  'event'        NSString
@@ -82,7 +82,7 @@
 - (void)eventsProperties:(NSDictionary *)params;
 
 /*
- METHOD: properties/top
+ METHOD: events/properties/top
  URI: http://mixpanel.com/api/2.0/events/properties/top/
  Parameters:
  'event'        NSString
@@ -91,7 +91,7 @@
 - (void)eventsPropertiesTop:(NSDictionary *)params;
 
 /*
- METHOD: properties/top
+ METHOD: events/properties/values
  URI: http://mixpanel.com/api/2.0/events/properties/values/
  Parameters:
  'event'        NSString
