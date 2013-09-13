@@ -15,6 +15,6 @@
 
 @optional
 
-- (void)receivedData:(NSDictionary *)dict;
+- (void)receivedData:(id)data;
 
 @end

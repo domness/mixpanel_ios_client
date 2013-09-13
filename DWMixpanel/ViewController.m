@@ -96,9 +96,9 @@
     NSLog(@"Request failed with error: %@", [error debugDescription]);
 }
 
-- (void)receivedData:(NSDictionary *)dict
+- (void)receivedData:(id)data
 {
-    NSLog(@"Received data from Mixpanel client: %@", dict);
+    NSLog(@"Received data from Mixpanel client: %@", data);
 }
 
 @end
