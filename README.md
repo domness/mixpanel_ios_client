@@ -1,4 +1,4 @@
-DWMixPanel
+MixpanelClient
 ===================
 
 Basic Mixpanel iOS client to export data via the Mixpanel API using your API key and secret.
@@ -11,11 +11,37 @@ The project includes a Podspec file for [AFNetworking](https://github.com/AFNetw
 
 ### Initialisations
 
-    - (Mixpanel *)initWithDelegate:(NSObject *)newDelegate;
+    - (MixpanelClient *)initWithDelegate:(NSObject *)newDelegate;
 
 ### Setting authentication details
 
     - (void)setApiKey:(NSString *)key andSecret:(NSString *)secret;
+
+### Delegates
+
+There are just three methods that by adding `MixpanelClientDelegate` will allow you to use in your controllers. This returns any data that is received from the server:
+
+#### requestSucceededForMethod:(NSString *)method
+
+    - (void)requestSucceededForMethod:(NSString *)method
+    {
+        NSLog(@"The method %@ was successful.", method);
+    }
+
+#### requestFailedWithError:(NSError *)error
+
+    - (void)requestFailedWithError:(NSError *)error
+    {
+        NSLog(@"An error occurred: %@", [error debugDescription]);
+    }
+
+#### @optional receivedData:(id)data
+
+    - (void)receivedData:(id)data
+    {
+        // Data is either an NSDictionary or an NSArray
+        NSLog(@"Data was received: %@", data);
+    }
 
 ### Events
 
