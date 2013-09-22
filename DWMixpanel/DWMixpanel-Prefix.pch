@@ -15,5 +15,5 @@
     #import <Foundation/Foundation.h>
     #import <SystemConfiguration/SystemConfiguration.h>
     #import <MobileCoreServices/MobileCoreServices.h>
-    #import "Mixpanel.h"
+    #import "MixpanelClient.h"
 #endif

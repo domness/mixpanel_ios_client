@@ -1,5 +1,5 @@
 //
-//  Mixpanel.h
+//  MixpanelClient.h
 //  DWMixpanel
 //
 //  Created by Dominic Wroblewski on 11/09/2013.
@@ -7,10 +7,10 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "MixpanelDelegate.h"
+#import "MixpanelClientDelegate.h"
 
-@interface Mixpanel : NSObject {
-    NSObject <MixpanelDelegate> *_delegate;
+@interface MixpanelClient : NSObject {
+    NSObject <MixpanelClientDelegate> *_delegate;
 }
 
 @property (strong, nonatomic) NSString *apiKey;
@@ -20,8 +20,8 @@
 #pragma mark -
 #pragma mark Initialisations
 
-+ (Mixpanel *)initFromDefaultsWithDelegate:(NSObject *)theDelegate;
-- (Mixpanel *)initWithDelegate:(NSObject *)newDelegate;
++ (MixpanelClient *)initFromDefaultsWithDelegate:(NSObject *)theDelegate;
+- (MixpanelClient *)initWithDelegate:(NSObject *)newDelegate;
 
 #pragma mark -
 #pragma mark Setting authentication details

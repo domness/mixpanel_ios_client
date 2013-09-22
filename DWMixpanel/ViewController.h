@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController <MixpanelDelegate>
+@interface ViewController : UIViewController <MixpanelClientDelegate>
 
 @end

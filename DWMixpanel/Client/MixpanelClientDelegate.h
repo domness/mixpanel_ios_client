@@ -1,5 +1,5 @@
 //
-//  MixpanelDelegate.h
+//  MixpanelClientDelegate.h
 //  DWMixpanel
 //
 //  Created by Dominic Wroblewski on 11/09/2013.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol MixpanelDelegate <NSObject>
+@protocol MixpanelClientDelegate <NSObject>
 
 - (void)requestSucceededForMethod:(NSString *)method;
 - (void)requestFailedWithError:(NSError *)error;

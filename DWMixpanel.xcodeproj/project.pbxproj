@@ -36,8 +36,8 @@
 		E7DD650F17E0AAD300E26190 /* DWMixpanelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DD650E17E0AAD300E26190 /* DWMixpanelTests.m */; };
 		E7DD651E17E0AE0A00E26190 /* MainWindow~iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7DD651D17E0AE0A00E26190 /* MainWindow~iPad.xib */; };
 		E7DD652017E0AE2B00E26190 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7DD651F17E0AE2B00E26190 /* MainWindow.xib */; };
-		E7DD652617E0B0D100E26190 /* Mixpanel.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DD652517E0B0D100E26190 /* Mixpanel.m */; };
-		E7DD652717E0B0D100E26190 /* Mixpanel.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DD652517E0B0D100E26190 /* Mixpanel.m */; };
+		E7DD652617E0B0D100E26190 /* MixpanelClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DD652517E0B0D100E26190 /* MixpanelClient.m */; };
+		E7DD652717E0B0D100E26190 /* MixpanelClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E7DD652517E0B0D100E26190 /* MixpanelClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,9 +98,9 @@
 		E7DD650E17E0AAD300E26190 /* DWMixpanelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DWMixpanelTests.m; sourceTree = "<group>"; };
 		E7DD651D17E0AE0A00E26190 /* MainWindow~iPad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "MainWindow~iPad.xib"; sourceTree = "<group>"; };
 		E7DD651F17E0AE2B00E26190 /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
-		E7DD652317E0B0C100E26190 /* MixpanelDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixpanelDelegate.h; sourceTree = "<group>"; };
-		E7DD652417E0B0D100E26190 /* Mixpanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mixpanel.h; sourceTree = "<group>"; };
-		E7DD652517E0B0D100E26190 /* Mixpanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Mixpanel.m; sourceTree = "<group>"; };
+		E7DD652317E0B0C100E26190 /* MixpanelClientDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixpanelClientDelegate.h; sourceTree = "<group>"; };
+		E7DD652417E0B0D100E26190 /* MixpanelClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MixpanelClient.h; sourceTree = "<group>"; };
+		E7DD652517E0B0D100E26190 /* MixpanelClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MixpanelClient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,9 +243,9 @@
 		E7DD652217E0B0B000E26190 /* Client */ = {
 			isa = PBXGroup;
 			children = (
-				E7DD652317E0B0C100E26190 /* MixpanelDelegate.h */,
-				E7DD652417E0B0D100E26190 /* Mixpanel.h */,
-				E7DD652517E0B0D100E26190 /* Mixpanel.m */,
+				E7DD652317E0B0C100E26190 /* MixpanelClientDelegate.h */,
+				E7DD652417E0B0D100E26190 /* MixpanelClient.h */,
+				E7DD652517E0B0D100E26190 /* MixpanelClient.m */,
 			);
 			path = Client;
 			sourceTree = "<group>";
@@ -395,7 +395,7 @@
 				E7BCEB1117E0C38C00FE73D5 /* SBJsonParser.m in Sources */,
 				E7BCEB1317E0C38C00FE73D5 /* SBJsonStreamParserAccumulator.m in Sources */,
 				E7BCEB1517E0C38C00FE73D5 /* SBJsonStreamParserState.m in Sources */,
-				E7DD652617E0B0D100E26190 /* Mixpanel.m in Sources */,
+				E7DD652617E0B0D100E26190 /* MixpanelClient.m in Sources */,
 				E7BCEB1717E0C38C00FE73D5 /* SBJsonStreamWriter.m in Sources */,
 				E7BCEB1417E0C38C00FE73D5 /* SBJsonStreamParserAdapter.m in Sources */,
 			);
@@ -406,7 +406,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7DD650F17E0AAD300E26190 /* DWMixpanelTests.m in Sources */,
-				E7DD652717E0B0D100E26190 /* Mixpanel.m in Sources */,
+				E7DD652717E0B0D100E26190 /* MixpanelClient.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

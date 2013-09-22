@@ -1,36 +1,36 @@
 //
-//  Mixpanel.m
+//  MixpanelClient.m
 //  DWMixpanel
 //
 //  Created by Dominic Wroblewski on 11/09/2013.
 //  Copyright (c) 2013 Dominic Wroblewski. All rights reserved.
 //
 
-#import "Mixpanel.h"
+#import "MixpanelClient.h"
 #import <CommonCrypto/CommonDigest.h>
 #import "AFHTTPClient.h"
 #import "AFHTTPRequestOperation.h"
 #import "SBJson.h"
 
-@interface Mixpanel (PrivateMethods)
+@interface MixpanelClient (PrivateMethods)
 
 - (BOOL)_isValidDelegateForSelector:(SEL)selector;
 
 @end
 
-@implementation Mixpanel
+@implementation MixpanelClient
 
 #define BASE_URL @"http://mixpanel.com/api/2.0/"
 
 #pragma mark -
 #pragma mark Initialisations
 
-+ (Mixpanel *)initFromDefaultsWithDelegate:(NSObject *)theDelegate
++ (MixpanelClient *)initFromDefaultsWithDelegate:(NSObject *)theDelegate
 {
     return [[self alloc] initWithDelegate:theDelegate];
 }
 
-- (Mixpanel *)initWithDelegate:(NSObject <MixpanelDelegate> *)newDelegate
+- (MixpanelClient *)initWithDelegate:(NSObject <MixpanelClientDelegate> *)newDelegate
 {
     if ((self = [super init])) {
         _delegate =  newDelegate;

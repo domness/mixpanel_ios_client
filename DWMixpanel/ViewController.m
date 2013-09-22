@@ -14,24 +14,24 @@
 
 @implementation ViewController
 
-#define API_KEY @""
-#define API_SECRET @""
+#define API_KEY @"98212c264aa1aaf8caf1cf90255c98e6"
+#define API_SECRET @"944fb0bd1901656f6cb5a1e759306d4e"
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    Mixpanel *mixpanel = [[Mixpanel alloc] initWithDelegate:self];
+    MixpanelClient *mixpanel = [[MixpanelClient alloc] initWithDelegate:self];
     [mixpanel setApiKey:API_KEY andSecret:API_SECRET];
     [mixpanel setExpireInterval:(NSInteger *)300];
     
-//    [mixpanel events:@{@"event": @[@"User created"],
-//                       @"type": @"unique",
-//                       @"unit": @"day",
-//                       @"interval": [NSNumber numberWithInt:1]
-//                       }];
+    [mixpanel events:@{@"event": @[@"Landed on Homepage"],
+                       @"type": @"unique",
+                       @"unit": @"day",
+                       @"interval": [NSNumber numberWithInt:30]
+                       }];
     
 //    [mixpanel eventsTop:@{@"type": @"unique"}];
-    
+
 //    [mixpanel eventsNames:@{@"type": @"unique"}];
     
 //    [mixpanel eventsProperties:@{@"event": @"User created",
